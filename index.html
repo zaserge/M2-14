@@ -185,6 +185,7 @@
       <form action="" method="get">
         <div class="subs-form-wrapper">
           <input
+            required
             class="subs-email"
             type="email"
             name="g-email"
@@ -210,9 +211,18 @@
         <div class="contact-info-wrapper">
           <form action="" method="get">
             <div class="git-form-wrapper">
-              <input type="text" name="c-name" placeholder="Name" />
-              <input type="email" name="c-email" placeholder="Your Mail" />
-              <textarea name="c-msg" placeholder="Type your message"></textarea>
+              <input required type="text" name="c-name" placeholder="Name" />
+              <input
+                required
+                type="email"
+                name="c-email"
+                placeholder="Your Mail"
+              />
+              <textarea
+                required
+                name="c-msg"
+                placeholder="Type your message"
+              ></textarea>
               <button class="btn-cont-info" type="submit">SEND MESSAGE</button>
             </div>
           </form>
@@ -246,5 +256,4 @@
       /></a>
     </footer>
   </body>
-  
 </html>
