@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -141,7 +141,7 @@
         </div>
       </section>
       <!-- Our team fotos -->
-      <section class="team-fotos row-wrap">
+      <div class="team-fotos row-wrap">
         <div>
           <img class="big-foto" alt="" />
         </div>
@@ -173,7 +173,7 @@
             <img class="small-foto" alt="" />
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <!-- Subcribe -->
     <section id="subscribe">
@@ -185,6 +185,7 @@
       <form action="" method="get">
         <div class="subs-form-wrapper">
           <input
+            required
             class="subs-email"
             type="email"
             name="g-email"
@@ -210,9 +211,18 @@
         <div class="contact-info-wrapper">
           <form action="" method="get">
             <div class="git-form-wrapper">
-              <input type="text" name="c-name" placeholder="Name" />
-              <input type="email" name="c-email" placeholder="Your Mail" />
-              <textarea name="c-msg" placeholder="Type your message"></textarea>
+              <input required type="text" name="c-name" placeholder="Name" />
+              <input
+                required
+                type="email"
+                name="c-email"
+                placeholder="Your Mail"
+              />
+              <textarea
+                required
+                name="c-msg"
+                placeholder="Type your message"
+              ></textarea>
               <button class="btn-cont-info" type="submit">SEND MESSAGE</button>
             </div>
           </form>
@@ -231,7 +241,7 @@
     </section>
     <!-- Footer -->
     <footer>
-      <p>&copy; Copyright @Junaed 2016, All rights reserved.</p>
+      <p class="copyright">&copy; Copyright @Junaed 2016, All rights reserved.</p>
       <a class="footer-icons flex-left-margin-auto" href="">
         <img src="images/twitter.png" width="33" height="33" alt=""
       /></a>
@@ -246,5 +256,4 @@
       /></a>
     </footer>
   </body>
-  
 </html>
